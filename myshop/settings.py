@@ -141,3 +141,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
+
+# key is used to store the cart in the user session
+CART_SESSION_ID = 'cart'
