@@ -1,0 +1,13 @@
+To install rabbitmq in ubuntu(a message broker for celery)
+--> sudo apt-get install rabbitmq-server
+
+To launch RabbitMQ 
+--> rabbitmq-server
+
+To start celery worker from your project directory(start before executing tasks)
+--> celery -A myshop worker -l info
+
+Flower is a web-based tool for monitoring Celery.
+Once installed, you can launch Flower by running the following command from 
+your project directory:
+--> celery -A myshop flower
