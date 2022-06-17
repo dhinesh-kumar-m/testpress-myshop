@@ -20,8 +20,8 @@ msgstr ""
 
 #: myshop/settings.py:126
 msgid "English"
-msgstr ""
+msgstr "Inglés"
 
 #: myshop/settings.py:127
 msgid "Spanish"
-msgstr ""
+msgstr "Español"
