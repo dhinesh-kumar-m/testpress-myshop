@@ -177,3 +177,14 @@ BRAINTREE_CONF = braintree.Configuration(
  BRAINTREE_PUBLIC_KEY,
  BRAINTREE_PRIVATE_KEY
 )
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+        ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+        }
+        }
