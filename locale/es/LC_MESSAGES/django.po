@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-19 21:10+0530\n"
-"PO-Revision-Date: 2022-06-19 15:40+0000\n"
+"POT-Creation-Date: 2022-06-19 21:23+0530\n"
+"PO-Revision-Date: 2022-06-19 15:58+0000\n"
 "Last-Translator:   <admin@admin.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -82,9 +82,21 @@ msgstr "Seguir comprando"
 msgid "Checkout"
 msgstr "Verificar"
 
+#: cart/urls.py:8
+msgid "add/<int:product_id>/"
+msgstr "agregar/<int:product_id>/"
+
+#: cart/urls.py:9
+msgid "remove/<int:product_id>/"
+msgstr "retirar/<int:product_id>/"
+
 #: coupons/forms.py:5
 msgid "Coupon"
 msgstr "Cupón"
+
+#: coupons/urls.py:7
+msgid "apply/"
+msgstr "aplicar/"
 
 #: myshop/settings.py:127
 msgid "English"
@@ -93,6 +105,44 @@ msgstr "Inglés"
 #: myshop/settings.py:128
 msgid "Spanish"
 msgstr "Español"
+
+#: myshop/urls.py:24
+msgid "admin/"
+msgstr "administración/"
+
+#: myshop/urls.py:25
+msgid "cart/"
+msgstr "carro/"
+
+#: myshop/urls.py:26
+msgid "payment/"
+msgstr "pago/"
+
+#: myshop/urls.py:27
+#, fuzzy
+#| msgid "Coupon"
+msgid "coupons/"
+msgstr "Cupón"
+
+#: myshop/urls.py:28
+msgid "rosetta/"
+msgstr "roseta/"
+
+#: myshop/urls.py:30
+msgid "orders/"
+msgstr "pedidos/"
+
+#: payment/urls.py:6
+msgid "process/"
+msgstr "proceso/"
+
+#: payment/urls.py:7
+msgid "done/"
+msgstr "hecho/"
+
+#: payment/urls.py:8
+msgid "canceled/"
+msgstr "cancelado"
 
 #: shop/templates/shop/base.html:8 shop/templates/shop/base.html:14
 msgid "My shop"
