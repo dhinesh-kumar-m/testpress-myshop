@@ -45,16 +45,16 @@ Thumbs.db
 #media
 /media
 
-**/migrations/**
-**/migrations/*
-!**/migrations
-!**/migrations/__init__.py
+# **/migrations/**
+# **/migrations/*
+# !**/migrations
+# !**/migrations/__init__.py
 
 # Environments
 .env
 .env/
 
-**/migrations
+# **/migrations
 *.DS_Store
 **/__pycache__
 **/.DS_Store
