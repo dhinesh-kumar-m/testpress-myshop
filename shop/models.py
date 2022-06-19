@@ -4,8 +4,8 @@ from parler.models import TranslatableModel, TranslatedFields
 
 # Create your models here.
 class Catagory(TranslatableModel):
-    name = models.CharField(max_length=200,db_index=True)
-    slug = models.SlugField(max_length=200,unique=True)
+    # name = models.CharField(max_length=200,db_index=True)
+    # slug = models.SlugField(max_length=200,unique=True)
     translations = TranslatedFields(
         name = models.CharField(max_length=200,db_index=True),
         slug = models.SlugField(max_length=200,db_index=True,unique=True)
@@ -23,20 +23,20 @@ class Catagory(TranslatableModel):
         return reverse('shop:product_list_by_category',args=[self.slug])
 
 class Product(TranslatableModel):
-    category = models.ForeignKey(Catagory,related_name='products',on_delete=models.CASCADE)
-    name = models.CharField(max_length=200,db_index=True)
-    slug = models.SlugField(max_length=200,db_index=True)
-    image = models.ImageField(upload_to = 'products/%Y/%m/%d',blank =True)
-    description = models.TextField(blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    available = models.BooleanField(default=True)
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
     translations = TranslatedFields(
         name = models.CharField(max_length=200, db_index=True),
         slug = models.SlugField(max_length=200, db_index=True),
         description = models.TextField(blank=True)
         )
+    category = models.ForeignKey(Catagory,related_name='products',on_delete=models.CASCADE)
+    # name = models.CharField(max_length=200,db_index=True)
+    # slug = models.SlugField(max_length=200,db_index=True)
+    image = models.ImageField(upload_to = 'products/%Y/%m/%d',blank =True)
+    # description = models.TextField(blank=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2)
+    available = models.BooleanField(default=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)    
 
     # class Meta:
     #     ordering = ('name',)
